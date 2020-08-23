@@ -31,10 +31,11 @@
 </template>
 
 <script>
+
+  import {onMounted} from 'vue'
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  setup () {
+    onMounted(() => {console.log('我是helloworld.vue')});
   }
 }
 </script>
